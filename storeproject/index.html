@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>store project</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="headerDiv">
+        <h1>store</h1>
+    </div>
+    <br>
+
+    <div class="fatherDiv">
+        <div id="product1" class="rowDiv">
+
+           <p class="productName">car</p> 
+            <div class="btnDiv">
+                <button onclick="addProduct('car',15)" class="btnItem" id="car">car</button>
+            </div>
+        </div>
+        <div class="rowDiv">
+            <p class="productName">beer</p>
+            <p class="productPrice">18 ILS</p>
+            <div class="btnDiv">
+                <button onclick="addProduct('beer',20)" class="btnItem" id="beer">beer</button>
+            </div>
+        </div>
+        <div class="rowDiv">
+            
+            <p class="productName">water</p>
+            <span class="productPrice">22 ILS</span>
+            <div class="btnDiv">
+                <button onclick="addProduct('water',22)" class="btnItem" id="water">watter</button>
+            </div>
+        </div>
+    </div>
+    <div class="cartDiv">
+        <div class="shopDiv">
+        </div>
+        <div class="mainCartDiv">
+            <h2>Shopping-Cart</h2>
+            <hr id="cartHr">
+            <div id="cartOn" class="textDiv">
+                <div class="cartHeader">
+                    <span class="nameSlots">Name</span>
+                    <span class="nameSlots" id="priceHead">Price</span>
+                    <span class="nameSlots">Remove</span>
+                    <div id="itemsList">
+                    </div>
+                </div>
+            </div>
+            <hr id="cartHr">
+            <div class="btnDiv2">
+                <button onclick="clearCart()" id="clearCartBtn">Clear</button>
+                <button onclick="sortProducts()" id="totalBtn" class="btnItem">Pay Now</button>   
+            </div>
+        </div>
+        <div class="shopDiv">
+        </div>
+    </div>
+
+</body>
+
+</html>
